@@ -1,8 +1,10 @@
 package controller;
-import javax.servlet.annotation.WebServlet;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.annotation.WebServlet;
+import java.io. PrintWriter;
 
 @WebServlet(name="Usuario", urlPatterns= {"/Usuario"})
 public class ControllerLogin extends HttpServlet{
@@ -23,7 +25,7 @@ public class ControllerLogin extends HttpServlet{
 				res.sendRedirect("index.html");
 			
 		} catch(Exception e){
-			System.out.println("Erro no build com o Gradle");
+			System.out.println("Tente Novamente");
 		}
 	}
 }
